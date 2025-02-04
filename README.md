@@ -36,10 +36,10 @@ In an attempt to make this theme more customizable, as is always one of my main 
 |-|-|
 |Disable transparency | `glassfox.transparency.disabled` |
 |Smaller tabs|`glassfox.sidebar.smaller-tabs`|
+|Larger tabs|`glassfox.sidebar.larger-tabs`|
 |Taller pinned tab container| `glassfox.sidebar.taller-pinned-tabs`|
-|Move tab preview to right of tab|`glassfox.sidebar.tab-preview-on-side`|
-|macOS-like Dock Magnification effect for the sidebar|`glassfox.sidebar.magnification-enabled`|
-|Whether to magnify the `height` or `width` of tabs (`width` is somewhat broken currently, so while it's my preferred option, I have, and I'd recommend that you too, keep this setting disabled or unset until I have found a workaround or a new implementation. That being said, you're most welcome to use it if you prefer it.)|`glassfox.sidebar.magnification-width`|
+|macOS-like Dock Magnification effect for tabs in the sidebar|`glassfox.sidebar.magnification-enabled`|
+|An option to animate only the icons of tabs, rather than also their height|`glassfox.sidebar.magnification.only-icons`|
 |Hide the new tab button in the sidebar|`glassfox.sidebar.hide-new-tab-button`|
 
 
