@@ -1,10 +1,10 @@
 # GlassFox
-GlassFox is my custom Firefox Theme for macOS which attempts to make the browser fully transparency, or take advantage of macOS' vibrancy.
-In progress-ish in that its not a perfect overhaul, but I probably won't really add to it much as I've not got time to maintain it really.
+GlassFox is my custom Firefox Theme for macOS which attempts to make the browser fully transparent, or take advantage of macOS' vibrancy.
+In progress-ish in that its not a perfect overhaul, but I probably won't really add to it much.
 
-<img width="1710" alt="image" src="https://github.com/user-attachments/assets/f776e6d4-4d23-44e2-8892-0f5211200c56">
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/91d7ed48-611a-4929-b8fa-7e8acf14e479" />
 
-<img width="1710" alt="image" src="https://github.com/user-attachments/assets/07648cda-1c5f-4711-872a-4f2c5204dc30">
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/d299ffae-237e-40f9-8239-f50a79d2dde4" />
 
 
 ## PLEASE NOTE: I'VE ONLY TESTED THIS THEME ON MACOS
@@ -64,7 +64,13 @@ html, body {
 ```
 
 **More on Stylus**
-Stylus is probably where I will add more support for transparency on other websites, instead of updating this repository.
-And so I've created a style on Stylus called `GlassFox`, which contains all of the styles that are in `userContent.css`, except for the styles
+I've created a style on Stylus called `GlassFox`, which contains all of the styles that are in `userContent.css`, except for the styles
 for built-in Firefox pages such as any page with the url prefix `about:`.
 So if you don't mind the lack of transparency on the newtab page for example, but still want some transparency, install the `GlassFox` style on Stylus.
+
+
+### Contributing
+If you've got any ideas for features I could add or alternative ways something could be implemented, open up an issue or pull request and let me know.
+
+
+Hope you all enjoy <3
