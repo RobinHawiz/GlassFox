@@ -8,7 +8,7 @@
 /* All Firefox pages */
 @-moz-document url-prefix("about:") {
     html, body {
-        background: rgba(0, 0, 0, .1) !important;
+        background: transparent !important;
         scrollbar-width: none !important;
     }
 }
@@ -35,6 +35,20 @@
     .card.addon {
         background: var(--card-bg)
     }
+}
+
+
+@-moz-document domain("mozilla.org") {
+    :root {
+        --color-text: white !important;
+    }
+}
+
+/* General styling */
+
+html, body {
+    border-radius: 8px !important;
+    background: transparent !important;
 }
 
 /* imports */
@@ -159,7 +173,7 @@
 
 @-moz-document domain(discord.com) {
     :root {
-        .layer_cd0de5 :is([role="dialog"], .streamPreview_adbea6) {
+        .layer_cd0de5 :is([role="dialog"] > *, .streamPreview_adbea6) {
             background: hsl(var(--primary-700-hsl)) !important;
         }
         
@@ -178,20 +192,32 @@
     .no-webkit-scrollbar * {
         scrollbar-width: none !important;
     }
+    :has(>[data-list-id="channel-autocomplete"]) {
+        &, > * {
+            background: var(--primary-700-hsl);
+        }
+    }
 }
 
 
 @-moz-document domain(modrinth.com) {
     :root {
+        .popup-container .popup-menu, .bg-bg-raised {
+            --color-raised-bg: #26292f;
+        }
+        .modal-body {
+            background: #26292f;
+        }
+        
         --color-bg: transparent !important;
         --color-raised-bg: rgba(0, 0, 0, .2) !important;
         --color-button-bg: rgba(0, 0, 0, .2) !important;
-        
+
         .scrollable-pane {
             scrollbar-width: none !important;
-            
+
         }
-        
+
         .group.flex.gap-1 {
             background: rgba(0, 0, 0, .05) !important;
             border-radius: 10px;
