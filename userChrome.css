@@ -10,7 +10,7 @@
     ;
   }
 }
-
+ 
 /* Basic Transparency */
 :root {
   @media not (prefers-reduced-transparency) {
@@ -84,16 +84,6 @@
 #vertical-pinned-tabs-container,
 scrollbox  {
     scrollbar-width: none !important;
-}
-
-
-/* Hide Empty Bookmarks Bar */
-:root:not([customizing]) {
-  &:has(#personal-toolbar-empty[hidden]) {
-    #PersonalToolbar {
-      display: none;
-    }
-  }
 }
 
 /* Taller Pinned Tabs Container */
