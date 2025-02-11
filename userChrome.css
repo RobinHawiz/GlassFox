@@ -90,11 +90,13 @@ scrollbox  {
 @media (-moz-bool-pref: "glassfox.sidebar.taller-pinned-tabs") {
   :root:not(:has(sidebar-main[expanded])) {
     #tabbrowser-tabs {
-      :has(tab) {
-        max-height: clamp(0px, 45%, 100%) !important;
-      }
+        height: 100% !important;
+        :has(tab) {
+            min-height: clamp(0px, 45%, 100%) !important;
+        }
     }
-  }
+}
+
 }
 
 /* Tab styling for more visual separation */
