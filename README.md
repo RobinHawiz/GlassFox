@@ -7,7 +7,7 @@ In progress-ish in that its not a perfect overhaul, but I probably won't really 
 <img width="1710" alt="image" src="https://github.com/user-attachments/assets/d299ffae-237e-40f9-8239-f50a79d2dde4" />
 
 
-## PLEASE NOTE: I'VE ONLY TESTED THIS THEME ON MACOS
+## PLEASE NOTE: I'VE ONLY TESTED THIS THEME ON MACOS (AND ON LINUX W/ HYPRLAND)
 
 # What is what?
 Within this repository, there are two files: `userChrome.css` and `userContent.css`.
