@@ -53,22 +53,6 @@ Sometimes Firefox glitches and clears my tabs, or I accidentally open a differen
 Tab Session Manager means its less painful to get them back.
 Also useful if you're trying to keep track of different projects, you can rename sessions to make them easy to find.
 
-#### [Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
-I'm not a big fan of scrollbars on the main body of web pages, and sometimes the scrollbar also clips into the edge of the website content,
-so I use Stylus to hide the scrollbars.
-Pretty simple to use, but all you have to do to hide the scrollbars is create a new style, and paste the following into the stylesheet.
-```css
-html, body {
-    scrollbar-width: none;
-}
-```
-
-**More on Stylus**
-I've created a style on Stylus called `GlassFox`, which contains all of the styles that are in `userContent.css`, except for the styles
-for built-in Firefox pages such as any page with the url prefix `about:`.
-So if you don't mind the lack of transparency on the newtab page for example, but still want some transparency, install the `GlassFox` style on Stylus.
-
-
 ### Contributing
 If you've got any ideas for features I could add or alternative ways something could be implemented, open up an issue or pull request and let me know.
 
