@@ -14,7 +14,7 @@
 /* Basic Transparency */
 :root {
   @media not (prefers-reduced-transparency) {
-    @media not (-moz-bool-pref: "glassfox.transparency.disabled") {
+    @supports not -moz-bool-pref( "glassfox.transparency.disabled") {
       appearance: -moz-sidebar !important;
     }
   }
@@ -87,7 +87,7 @@ scrollbox  {
 }
 
 /* Taller Pinned Tabs Container */
-@media (-moz-bool-pref: "glassfox.sidebar.taller-pinned-tabs") {
+@supports -moz-bool-pref( "glassfox.sidebar.taller-pinned-tabs") {
   :root:not(:has(sidebar-main[expanded])) {
     #tabbrowser-tabs {
         height: 100% !important;
@@ -130,8 +130,8 @@ scrollbox  {
 
 /* Tab sizing - Support for magnification or different sizes. */
 #tabbrowser-tabs tab {
-  @media (-moz-bool-pref: "glassfox.sidebar.magnification-enabled") {
-    @media not (-moz-bool-pref: "glassfox.sidebar.magnification.icons-only") {
+  @supports -moz-bool-pref( "glassfox.sidebar.magnification-enabled") {
+    @supports not -moz-bool-pref( "glassfox.sidebar.magnification.icons-only") {
       --tab-height: var(--tab-scale);
     }
   }
@@ -145,14 +145,14 @@ scrollbox  {
 }
 
 /* Tab Sizing */
-@media (-moz-bool-pref: "glassfox.sidebar.smaller-tabs") {
+@supports -moz-bool-pref( "glassfox.sidebar.smaller-tabs") {
     tab,
     #tab-preview-panel {
         --tab-size:.8;
     }
 }
 
-@media (-moz-bool-pref: "glassfox.sidebar.larger-tabs") {
+@supports -moz-bool-pref( "glassfox.sidebar.larger-tabs") {
     tab, 
     #tab-preview-panel {
         --tab-size: 1.25;
@@ -160,7 +160,7 @@ scrollbox  {
 }
 
 /* macOS Dock-like magnification for sidebar */
-@media (-moz-bool-pref: "glassfox.sidebar.magnification-enabled") and (-moz-bool-pref: "sidebar.verticalTabs") {
+@supports -moz-bool-pref( "glassfox.sidebar.magnification-enabled") and (-moz-bool-pref: "sidebar.verticalTabs") {
   sidebar-main:not([expanded]) {
     #vertical-tabs {
       overflow: visible !important;
@@ -187,7 +187,7 @@ scrollbox  {
   }
 }
 
-@media (-moz-bool-pref: "glassfox.sidebar.hide-new-tab-button") {
+@supports -moz-bool-pref( "glassfox.sidebar.hide-new-tab-button") {
   #tabbrowser-tabs toolbarbutton[label="New Tab"] {
     display: none !important;
   }
