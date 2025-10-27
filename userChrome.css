@@ -117,7 +117,7 @@ scrollbox  {
     }
   }
   &:hover {
-    .tab-background: {
+    .tab-background {
       --tab-bg: var(--transparent-bg-light);
       filter: brightness(100%);
     }
